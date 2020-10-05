@@ -7,9 +7,9 @@ public class Question4_1{
 			
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			
-			System.out.println("1つ目の文字列を入力してください。");
+			System.out.println("1つ目の文字列を入力し,[Return]キーを押してください。");
 			String str1= br.readLine();
-			System.out.println("2つ目の文字列を入力してください。");
+			System.out.println("2つ目の文字列を入力し,[Return]キーを押してください。");
 			String str2 = br.readLine();
 			
 			String result = "1st string is " + str1 + ".\n" + "2nd string is " + str2 + ".";
