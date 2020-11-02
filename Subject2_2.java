@@ -17,14 +17,14 @@ public class Subject2_2{
             }catch(NumberFormatException e){
                 System.out.println("入力された文字列は数値に変換できません。入力しなおしてください。");
                 rank = Integer.parseInt(br.readLine());
-            }catch(ArrayIndexOutOfBoundsException e){
-                System.out.println("1~5までの数を入力してください。");
             }
 
             System.out.println("売り上げ" + rank + "位の商品の名前は" + name[rank - 1] + "、" + "値段は" + String.format("%,d" , price[rank - 1])+ "円です。");
 
         }catch(IOException e){
             System.out.println("標準入力において例外が発生しました。");
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("1から5までの数を入力してください。");
         }
      }
 }
