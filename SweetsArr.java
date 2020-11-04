@@ -1,7 +1,10 @@
 import java.io.*;
 import java.lang.*;
 
+
 public class SweetsArr{
+    String name;
+    int price;
      public static void main(String[] args){
         Sweets[] info= new Sweets[5];
         try{
